@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="panel-heading"> 
+          <h3 class="panel-title">AllBookDetails</h3>
+            </div>
+  </div>
+  <div class="panel panel-primary" *ngFor="let book of books">
+          
+      <div class="panel-heading">
+          <h3 class="panel-title">{{book.bookTitle}}</h3>
+      </div>
+       <div class="panel-body">
+           <div class="col-xs-10">
+               <div class="row vertical-align">
+                      <div class="col-xs-4">
+                   <img class="imageClass" [src]=book.photopath>
+                       </div>
+                          <div class="col-xs-8">
+  
+                                  <div class="row">
+                                      <div class="col-xs-6">
+                                        BookTitle
+                                       </div>
+                                          <div class="col-xs-6">
+                                           :{{book.bookTitle}}
+                                          </div>  
+                                  </div>
+                                  <div class="row">
+                                          <div class="col-xs-6">
+                                            BookAuthor
+                                           </div>
+                                              <div class="col-xs-6">
+                                               :{{book.bookAuthor}}
+                                              </div>  
+                                      </div>
+                                      <div class="row">
+                                              <div class="col-xs-6">
+                                                BookPublisher
+                                               </div>
+                                                  <div class="col-xs-6">
+                                                   :{{book.bookPublisher}}
+                                                  </div>  
+                                          </div>
+                                          <div class="row">
+                                                  <div class="col-xs-6">
+                                                    BookInfo
+                                                   </div>
+                                                      <div class="col-xs-6">
+                                                       :{{book.bookInfo}}
+                                                      </div>  
+                                              </div>
+                                              <div class="row">
+                                                      <div class="col-xs-6">
+                                                        BookPrice
+                                                       </div>
+                                                          <div class="col-xs-6">
+                                                           :{{book.bookPrice}}
+                                                          </div>  
+                                                  </div>
+                                               </div>
+                                             </div>
+                                          </div>
+                                       </div>   
